@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Report">
-    <output-path>C:/Нова папка/plugins</output-path>
-    <root id="archive" name="Report.jar">
-      <element id="module-output" name="peteslexreport" />
-    </root>
-  </artifact>
-</component>

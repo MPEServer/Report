@@ -1,8 +1,0 @@
-name: Report
-main: tech.teslex.mpes.report.Report
-version: "0.8"
-api: ["1.0.0"]
-commands:
-  report:
-    description: "Send report"
-    usage: "/report <message>"
