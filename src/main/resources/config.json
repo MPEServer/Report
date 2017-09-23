@@ -1,0 +1,26 @@
+{
+  "messageTemplate": "New report!<br>Sender name: {PLAYER}<br>Text: {TEXT}",
+  "onSendMessage": "Thanks for report!",
+
+  "email": {
+    "use": true,
+    "smtpAuth": true,
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587,
+    "username": "yourname@gmail.com",
+    "password": "yourpassword",
+    "receiverMail": "receiver@gmail.com",
+
+    "senderEmail": "no-reply@no-reply",
+    "title": "New report!",
+    "type": "text"
+  },
+  "vk": {
+    "use": false,
+    "senderToken": "token",
+    "receiverId": 123456
+  }
+//  "telegram": {
+//    "botSecret": "secret"
+//  }
+}

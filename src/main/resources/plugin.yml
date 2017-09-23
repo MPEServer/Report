@@ -1,8 +1,8 @@
 name: Report
-main: pe.teslex.report.Main
-version: "0.1"
+main: tech.teslex.mpes.report.Report
+version: "0.8"
 api: ["1.0.0"]
 commands:
   report:
-    description: "Сообщить о баге или читере"
-    usage: "/report [описание]"
+    description: "Send report"
+    usage: "/report <message>"
