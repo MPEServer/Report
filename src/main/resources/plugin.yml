@@ -1,6 +1,6 @@
 name: Report
 main: tech.teslex.mpes.report.Report
-version: "0.8"
+version: "0.8.1"
 api: ["1.0.0"]
 commands:
   report:
