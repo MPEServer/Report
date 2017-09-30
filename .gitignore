@@ -6,7 +6,6 @@ atlassian-ide-plugin.xml
 
 ### Maven template
 target/
-!target/report-1.0-SNAPSHOT.jar
 
 pom.xml.tag
 pom.xml.releaseBackup
@@ -19,3 +18,6 @@ buildNumber.properties
 
 !/.mvn/wrapper/maven-wrapper.jar
 /.idea/
+Буде вилучено lib/
+Буде вилучено src/main/main.iml
+!/target/report-1.0-SNAPSHOT.jar
