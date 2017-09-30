@@ -31,9 +31,9 @@ public class Report extends PluginBase {
 		initConfig();
 		config = loadCfg();
 
-		if (config.getEmail().isUse())
-			if (getServer().getPluginManager().getPlugin("MailApi") != null && getServer().getPluginManager().getPlugin("MailApi").isEnabled())
-				getLogger().error("Plugin MailApi not found! Please install it and start again!");
+//		if (config.getEmail().isUse())
+//			if (getServer().getPluginManager().getPlugin("MailApi") != null)
+//				getLogger().error("Plugin MailApi not found! Please install it and start again!");
 	}
 
 	private void initConfig() {
@@ -74,7 +74,9 @@ public class Report extends PluginBase {
 								vkApi.sendMessage(
 										String.valueOf(config.getVk().getReceiverId()),
 										config.getVk().getSenderToken(),
-										config.getMessageTemplate());
+										config.getMessageTemplate()
+												.replace("{TEXT}", String.join(" ", args))
+												.replace("{PLAYER}", sender.getName()));
 							} catch (IOException e) {
 								e.printStackTrace();
 							}
@@ -94,7 +96,9 @@ public class Report extends PluginBase {
 												config.getEmail().getSenderEmail(),
 												config.getEmail().getReceiverMail(),
 												config.getEmail().getTitle(),
-												String.join(" ", args),
+												config.getMessageTemplate()
+														.replace("{TEXT}", String.join(" ", args))
+														.replace("{PLAYER}", sender.getName()),
 												config.getEmail().getType());
 							} catch (MessagingException e) {
 								e.printStackTrace();

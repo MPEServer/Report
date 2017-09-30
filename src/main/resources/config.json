@@ -13,7 +13,7 @@
 
     "senderEmail": "no-reply@no-reply",
     "title": "New report!",
-    "type": "text"
+    "type": "text/html"
   },
   "vk": {
     "use": false,
